@@ -1,3 +1,6 @@
+body {
+    background: gray
+}
 .glowny{
 width: 100%;
 max-width: 960px;
@@ -5,24 +8,25 @@ margin: 0 auto
 
 }
 
-.flex-container{
-    display: flex
-
+.flex-container {
+    display: flex;
+    background: white
 }
-.box{
+.box {
 
     height: 100px;
-    min-width: 100px
+    min-width: 100px;
+        
 }
 
 .one {
 
     background: red;
 }
-gi
+
 .two {
 
-    background: green
+    background: orange
 }
 
 .thre{
