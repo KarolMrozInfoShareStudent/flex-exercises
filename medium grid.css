@@ -1,0 +1,41 @@
+
+    
+h1{font-size: 40px; color: brown;
+    text-align: center
+    
+
+
+}
+
+.box1{
+    width: 100%;
+    background: gray;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+
+
+}
+
+.box2{
+    width: 100%;
+    background: blue;
+    display: flex;
+
+
+}
+
+.small{
+ 
+    width: 200px;
+    height: 200px;
+    background: red;
+    margin: 20px;
+    
+}
+    
+    
+
+
+
+
