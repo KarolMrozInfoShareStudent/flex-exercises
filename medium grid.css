@@ -19,8 +19,10 @@ h1{font-size: 40px; color: brown;
 
 .box2{
     width: 100%;
-    background: blue;
+    background: gray;
     display: flex;
+    align-items: stretch;
+    justify-content: space-between;
 
 
 }
