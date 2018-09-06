@@ -27,14 +27,24 @@ h1{font-size: 40px; color: brown;
 
 }
 
+.box3{
+    width: 100%;
+    background: gray;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
 .small{
  
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     background: red;
     margin: 20px;
     
 }
+
+
     
     
 
