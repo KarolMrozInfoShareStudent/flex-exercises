@@ -1,6 +1,6 @@
     .navibar{
         width: 100%;
-        height: 100px;
+        height: 120px;
         background: gray;
         display: flex;
         justify-content: space-between;
@@ -8,25 +8,29 @@
     }
 
     .leftNavi{
-        height: 100%;
+        height: 80%;
         width: 200px;
         background: orange;
         border: 1px solid black;
+        display: flex;
+        align-self: center
     }
 
     .rightNavi{
-        height: 100%;
+        height: 80%;
         width: 100%;
         background: orange;
         display: flex;
         justify-content: flex-end;
+        align-self: center
 
     }
 
     .button{
         height: 100%;
         width: 200px;
-        border: 1px solid black
+        border: 1px solid black;
+
     }
 
 
