@@ -1,13 +1,13 @@
 #wrapper{
     margin: 0 auto;
-    width: 1000px;
-    height: 1000px;
+    width: 960px;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8,1fr);
+    grid-template-rows:minmax(100px) repeat(8,1fr);
     grid-template-areas: 
+                    "nav nav nav nav nav nav nav nav"
                     "header header header header header header header header"
-                    ". . . . . . . ."
                     "section section section section section . aside aside"
                     "section section section section section . aside aside"
                     "section section section section section . aside aside"
@@ -18,11 +18,117 @@
 
 }
 
-#wrapper > .box{
-    background-color: ghostwhite;
-}
 
+nav{grid-area: nav;
+}
 header{grid-area: header}
-section{grid-area: section}
+section{
+    grid-area: section;
+    font-family: 'Cantarell', sans-serif;
+}
 aside{grid-area: aside}
 footer{grid-area: footer}
+
+
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    display: inline;
+    height: 20px;
+    width: 100px;
+    padding: 20px;
+    background-color: #333;
+    box-shadow: 2px 2px 0px 0.2px rgba(0, 0, 0, 0.02);
+    border-radius: 24px 24px 24px 24px
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Source Code Pro', Menlo, Consolas, Monaco, monospace;
+    font-size: 14.5px;
+    font-weight: 500;
+    margin-right: 0px;
+}
+
+.header {
+    border-top: 3px solid #e18728;
+    background-color: #e18728;
+}
+
+.header:hover {
+    background: #e18728;
+}
+
+.opis {
+    border-top: 3px solid #BE4C39;
+}
+
+.opis:hover {
+    background: #BE4C39;
+}
+
+.slider {
+    border-top: 3px solid #9351A6;
+}
+
+.slider:hover {
+    background: #9351A6;
+}
+
+.footer {
+    border-top: 3px solid #4472B9;
+}
+
+.footer:hover {
+    background: #4472B9;
+}
+
+header{
+    background: url(https://followadder-lcp9w4x.stackpathdns.com/wp-content/uploads/2016/05/blue-water-background-website-header.jpg)no-repeat center;
+}
+
+header >h1{
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    color: azure
+    
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+.foto{
+    width: 100%;
+    height: 40%;
+    
+}
+.one{
+    background: url(https://images.pexels.com/photos/1020315/pexels-photo-1020315.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) no-repeat center;
+    background-size: 100%
+}
+
+.two{
+    background: url(https://i.ytimg.com/vi/bEPAbS-SRlg/maxresdefault.jpg) no-repeat center;
+    background-size: 100% 
+}
+section >p {
+    font-family: 'Cantarell', sans-serif;
+    line-break: 20px;
+    padding: 3px
+
+}
+
+.footer1 > p{
+    text-align: center;
+    background: grey;
+    padding: 0 20% 0 20%;
+    margin-bottom: -20px
+    
+    
+}

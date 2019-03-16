@@ -1,18 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" href="./css/nazwane obszary rozmieszczenie.css">
+    <link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet">
+
     <title>nazwane obszary rozmieszczenie</title>
 </head>
+
 <body>
     <div id="wrapper">
-        <header class="box">header</header>
-        <section class="box">content</section>
-        <aside class="box">slidebar</aside>
-        <footer class="box">footer</footer>
-    </div>    
+        <nav class="box nav">
+            <ul>
+                <li class="header"><a href="#">Strona</a></li>
+                <li class="opis"><a href="#">Opis</a></li>
+                <li class="slider"><a href="#">zdjecia</a></li>
+                <li class="footer"><a href="#footer1">footer</a></li>
+            </ul>
+        </nav>
+        <header class="header1">
+            <h1>nazwane obszary</h1>
+        </header>
+        <section class="box">
+            <h2>Strona</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ratione tempora nulla, minima numquam
+                obcaecati esse incidunt consequatur voluptatibus nesciunt vitae quo molestias magni sapiente omnis
+                velit? Perspiciatis, veniam animi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque cum nihil magni corporis iste dolorum
+                ab dolorem, quod reprehenderit obcaecati ipsum, asperiores facilis assumenda quae nesciunt dicta
+                molestias architecto laborum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex deleniti fugit, ea incidunt repudiandae
+                libero natus animi quos autem debitis illo dolorem molestiae laudantium perferendis. Itaque, cumque!
+                Odio, ipsa numquam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut neque eveniet, accusamus voluptatem
+                consequuntur facilis maxime explicabo vero. Officia pariatur est odio ipsam nihil tempora nulla magnam
+                ipsa sequi earum.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In reprehenderit error voluptatum laborum
+                maiores! Nisi ad in iure eius ducimus nesciunt, veniam minus maxime earum culpa. Id quae voluptatibus
+                voluptas.</p>
+        </section>
+        <aside class="box">
+            <div class="foto one"></div>
+            <div class="foto two"></div>
+        </aside>
+        <footer id="footer1" class="footer1"></footer>
+    </div>
+    <script>
+        var today = new Date();
+        var year = today.getFullYear();
+        var footer = document.getElementById("footer1");
+
+        footer.innerHTML = "<p> Copyrigth &copy;" + year + "</p>"
+    </script>
 </body>
+
 </html>
