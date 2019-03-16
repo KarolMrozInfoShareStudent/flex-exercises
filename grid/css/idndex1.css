@@ -1,0 +1,37 @@
+
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 1000px;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr)
+
+
+}
+
+.wrapper > div{
+    background-color: rgb(216, 213, 213);
+    text-align: center;
+    box-shadow: 4px 10px 26px -12px rgba(0,0,0,0.74);
+}
+
+.box1{
+    grid-column: 1/9;
+}
+.box2{
+    grid-column: 2/4;
+    grid-row: 3/7
+}
+
+.box3{
+    grid-column: 6/9;
+    grid-row: 5/7; 
+}
+
+.box4{
+    grid-column: 1/8;
+    grid-row: 8
+}
+
