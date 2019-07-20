@@ -19,7 +19,7 @@ body {
     border-radius: 10px;
     width: 100%;
     clip-path: circle(10% at 0% 0%);
-    transition: clip-path .5s ease-in-out;
+    transition: clip-path 0.5s ease-in-out;
 
     h1 {
       color: white;
@@ -31,7 +31,45 @@ body {
       font-size: 0.9rem;
     }
   }
-  &:hover .inner{
-    clip-path: circle(75%)  
+  &:hover .inner {
+    clip-path: circle(75%);
+  }
 }
+
+.inner_Two {
+  background: #00ff80;
+  padding: 1em;
+  border-radius: 10px;
+  width: 250px;
+  clip-path: circle(10% at 90% 20%);
+  transition: all clip-path .5s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    clip-path: circle(75%);
+    background: #00b6ff;
+  }
+
+  span {
+    float: right;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    transition: color .5s;
+    position: relative;
+    margin-right: 4%;
+  }
+  &:hover span {
+    color: rgba(255, 255, 255, 0);
+  }
+
+  h1 {
+    color: white;
+    margin: 0;
+  }
+
+  p {
+    color: white;
+    font-size: 0.9rem;
+  }
 }
