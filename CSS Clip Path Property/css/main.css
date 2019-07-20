@@ -1,5 +1,5 @@
 body {
-  background: #78e9ec;
+  background: #bcfdff;
   margin: 0;
   height: 100vh;
   display: -ms-grid;
@@ -9,5 +9,28 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 30%;
+  background: white;
+  border-radius: 10px;
+}
+
+.container .inner {
+  background: #00B6FF;
+  padding: 1em;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.container .inner h1 {
+  color: white;
+  margin: 0;
+}
+
+.container .inner p {
+  color: white;
+  font-size: .9rem;
 }
 /*# sourceMappingURL=main.css.map */
